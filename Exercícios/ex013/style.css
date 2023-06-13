@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+ h1 {
+    background-color: blue;
+    color: white;
+ }
+h2 {
+    background-color: blue;
+    color: rgb(0, 0, 0);
+}
+p {
+    color: white;
+}

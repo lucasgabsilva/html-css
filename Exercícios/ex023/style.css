@@ -1,0 +1,13 @@
+body {
+    font: 1em Arial;
+    background-color: rgb(255, 0, 0);
+}
+
+article#caixa {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px rgb(0, 0, 0);
+    border-radius: 10px 30px 30px;
+}

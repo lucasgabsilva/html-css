@@ -1,0 +1,206 @@
+@charset "UTF-8"; /*Padrão de caracteres especiais para não ter problemas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*Link do google fonts para a importação de fonte externa*/
+
+@font-face { /*Declaração para importação de fonte baixada*/
+    font-family: 'Android'; /*Nome da fonte baixada*/
+    src: url('../arquivos/fontes/idroid.otf'); /*Caminho da pasta em que a fonte foi baixada*/
+    font-weight: normal; /*Peso (intensidade) da fonte*/
+}
+
+:root { /*Inicio da declaração de variáveis em CSS*/
+    --cor0: #c5ebd6; /*Variável que armazena o primeiro tom de cor do site (mais claro)*/
+    --cor1: #83e1ad; /*Variável que armazena o tom de cor 2*/
+    --cor2: #3ddc84; /*Variável que armazena o tom de cor 3*/
+    --cor3: #2fa866; /*Variável que armazena o tom de cor 4*/
+    --cor4: #1a5c37; /*Variável que armazena o tom de cor 5*/
+    --cor5: #063d1e; /*Variávl que armazena o sexto e último tom de cor (mais escuro) do site*/
+
+    --fontepadrao: Arial, Verdana, Helvetica, sans-serif; /*Variável que armazena a fonte padrão que vai ser usada no site*/
+    --fontedestaque: 'Bebas Neue', cursive; /*Variável que armazena a fonte de destaque do site*/
+    --fonteandroid: 'Android', cursive; /*Variável que armazena a fonte android*/
+}
+
+* { /*Configuração global (serve para todos os elementos do site)*/
+    margin: 0px; /*Todos os elementos do site terão 0px de margem*/
+    padding: 0px; /*Todos os elementos do site terão, por padrão declarado, 0px de preenchimento*/
+}
+
+body { /*Configuração de estilo para o corpo do site*/
+    background-color: var(--cor0);
+    font-family: var(--fontepadrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header { /*Confuguração de estilo para o cabeçalho do site*/
+    background-image: linear-gradient(to top, var(--cor5),var(--cor2));
+    min-height: 150px; /*Altura mínima do cabeçalho*/
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 { /*Confuguração de estilo para todo título h1 que estiver dentro do cabeçalho*/
+    color: white; /*O título principal do site terá a cor branca*/
+    font-family: var(--fontedestaque); /*Usei a fonte de destaque, declarada nas variáveis, para o h1*/
+    font-weight: normal; /*Intensidade do texto normal*/
+    margin-bottom: 20px; /*Margem em baixo do elemento de 20px*/
+    font-size: 3em; /*Tamanho da fonte definido para ser 3x maior que o padrão*/
+    text-shadow: 2px 2px 0px black; /*Sombra do texto do título principal no cabeçalho*/
+}
+
+header > p { /*Confuguração de estilo para todo parágrafo que estiver dentro do cabeçalho*/
+    color: white; /*Cor do parágrafo no cabeçalho definida como branca*/
+    font-family: var(--fontepadrao); /*A fonte que vai ser usada neste parágrafo vai ser a fonte padrão declarada*/
+    font-size: 1.2em; /*Fonte do parágrafo 20% maior que a fonte padrão*/
+    max-width: 500px; /*Tamanho máximo do parágrafo vai ser de 500px*/
+    padding-bottom: 10px; /*Preenchimento na parte de baixo do parágrafo de 10px*/
+    padding-right: 10px; /*10 pixels de preenchimento à direita do parágrafo*/
+    padding-left: 10px; /*10 pixels de preenchimento à esqueda do parágrafo*/
+    margin: auto; /*Margem automática para que fique sempre centralizado*/
+    text-shadow: 2px 2px 0px black; /*Sombra do texto*/
+}
+
+nav { /*Confuguração de estilo para o menu do site*/
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+}
+
+nav > a { /*Confuguração de estilo para os links dentro do menu nav do site*/
+    color: var(--cor1);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main { /*Confuguração de estilo para conteúdo principal do site*/
+    min-width: 300px; /*Corpo principal com tamanho mínimo de 300 pixels*/
+    max-width: 1000px; /*Tamanho máximo do corpo principal de 1000px*/
+    margin: auto; /*Margem automática para que o corpo do site fique sempre centralizado*/
+    margin-bottom: 30px; /*Margem em baixo do corpo de 30 pixels*/
+    background-color: white; /*Cor de fundo do corpo em branco*/
+    padding: 20px; /*Preenchimento do corpo com 20px*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438); /*Sombras na caixa do corpo*/
+    border-radius: 0px 0px 15px 15px; /*Bordas arredondadas (somente em baixo)*/
+}
+
+main h1 { /*Confuguração de estilo para todos os títulos h1 dentro do corpo principal do site*/
+    color: var(--cor5);
+    font-family: var(--fonteandroid);
+}
+
+main h2 { /*Confuguração de estilo para os títulos de hierarquia 2 dentro do corpo principal do site*/
+    font-family: var(--fonteandroid); /*Usa a variável declarada para definir a fonte android no h2*/
+    font-weight: normal; /*Peso da fonte definido como normal*/
+    color: var(--cor4); /*Cor das letras definina como a quinta cor armazenada nas variáveis*/
+    background-image: linear-gradient(to right, var(--cor1), transparent); /*Define um degradê da esquerda para a direita, indo da cor 2 até o transparente (neste caso, branco)*/
+    font-size: 1.3em; /*Fonte do h2 30% maior que a fonte padrão para títulos de hierarquia 2*/
+    text-indent: 8px; /*Recuo do texto em 8px*/
+}
+
+main strong { /*Confuguração de estilo para a fonte dentro do corpo pricipal do site*/
+    color: var(--cor4); /*Cor de intensidade 5 usada*/
+    font-weight: bold; /*Fonte mais forte*/
+}
+
+main a { /*Confuguração de estilo para os links dentro do conteúdo principal do site*/
+    background-color: var(--cor2);
+    padding: 2px 6px;
+    text-decoration: none;
+    color: var(--cor5);
+
+}
+
+main a:hover { /*Configuração de estilo de evento para toda vez que passar o mouse em cima dos links que estão dentro do corpo principal do site*/
+    text-decoration: underline; /*Toda vez que passar o mouse sobre o link, surge uma linha em baixo*/
+    color: var(--cor5); /*Cor da linha em baixo do link*/
+}
+
+main p { /*Confuguração de estilo para todos os parágrafos que estiverem dentro do corpo principal do site*/
+    margin: 15px 0px; /*Margem de 15 pixels em cima e 0 pixel em baixo*/
+    text-align: justify; /*Alinhamento de texto justificado*/
+    text-indent: 30px; /*Espaçamento do texto de 30px*/
+    line-height: 2em; /*Espaçamento entre as linhas*/
+    font-size: 1em; /*Tamanho da fonte em relação a fonte principal do site*/
+}
+
+main img.pequena { /*Confugução de uma class declarada como pequena*/
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside { /*Confuguração de estilo para conteúdo periférico (complementar) do site*/
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.473);
+    min-width: 300;
+    max-width: 1000px;
+    margin: auto;
+}
+
+aside > ul { /*Confuguração de estilo para as listas não ordenadas dentro do conteúdo periférico do site*/
+    list-style-type: '\1F5F8\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside > h3 { /*Confuguração de estilo para os títulos de hierarquia 3 dentro do conteúdo periférico do site*/
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.video { /*Confuguração de estilo para a classe declarada como vídeo*/
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    padding-bottom: 55%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+div.video > iframe { /*Confuguração de estilo para o iframe que está dentro (filho) da classe vídeo*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer { /*Confuguração de estilo para o rodapé do site*/
+    background-color: var(--cor5); /*Deixa a cor de fundo do rodapé com a cor 6*/
+    color: white; /*Texto do rodapé na cor branca*/
+    text-align: center; /*Deixa todo o texto alinhado no centro*/
+    font-size: 0.8em; /*Coloca a fonte do rodapé 20% menor que a fonte padrão do site*/
+    padding: 5px; /*Preenchimento geral de 5px*/
+    margin-top: 30px; /*30 pixels de margem no topo da caixa*/
+}
+
+footer a { /*Confuguração de estilo para os links dentro do rodapé do site*/
+    color:  white; /*Deixa a cor do texto do rodapé branco*/
+    text-decoration: none; /*Tira a decoração do texto dos links*/
+    font-weight: bolder; /*Deixa a fonte mais forte*/
+}
+
+footer a:hover { /*Confuguração de estilo de evento para toda vez que passar o mouse em cima dos links do rodapé do site*/
+    text-decoration: underline; /*Configura uma linha em baixo do link quando passar o mouse sobre ele*/
+    color: var(--cor1); /*Define a cor da linha em baixo do link*/
+}

@@ -1,0 +1,16 @@
+h1 {
+    width: 300px; /*Largura da caixa*/
+    height: 50px; /*Altura da caixa*/
+    background-color: lightgray; /*Cor de fundo da caixa*/
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+    outline-width: 30px;
+    outline-style: solid;
+    outline-color: blue;
+    margin: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
