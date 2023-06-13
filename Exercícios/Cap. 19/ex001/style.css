@@ -8,6 +8,10 @@
         border-radius: 5px;
     }
 
+    body {
+        background-image: url('imagens/wallpaper001.jpg');
+    }
+
     #q1 {
         background-color: skyblue;
     }
@@ -17,5 +21,5 @@
     }
 
     #q3 {
-        background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+        background-image: url('imagens/pattern001.png');
     }
