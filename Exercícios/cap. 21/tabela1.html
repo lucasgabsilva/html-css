@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid rgba(0, 0, 0, 0.555);
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        tr.linha {
+            background-color: rgb(150, 149, 149);
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela em html</h1>
+
+    <table>
+        <tr> <!--primeira linha-->
+            <td>A1</td> <!--Primeiro dado-->
+            <td>B1</td> <!--Segundo dado-->
+            <td>C1</td> <!--Terceiro dado-->
+        </tr>
+
+        <tr class="linha"><!--Segunda linha-->
+            <td>A2</td><!--Primeiro dado da segunda linha-->
+            <td>B2</td><!--Segundo dado da segunda linha-->
+            <td>C2</td><!--Terceiro dado da terceira linha-->
+        </tr>
+
+        <tr><!--Terceira linha-->
+            <td>A3</td><!--Primeiro dado terceira linha-->
+            <td>B3</td><!--segundo dado da terceira linha-->
+            <td>C3</td><!--Teceiro dado da terceira linha-->
+        </tr>
+
+        <tr class="linha"><!--Quarta linha-->
+            <td>A4</td><!--Primeiro dado da quarta linha-->
+            <td>B4</td><!--Segundo dado da quarta linha-->
+            <td>C4</td><!--Terceiro dado da quarta linha-->
+        </tr>
+        
+        <tr><!--Quinta linha-->
+            <td>A5</td><!--Primeiro dado da quinta linha-->
+            <td>B5</td><!--Segundo dado da quinta linha-->
+            <td>C5</td><!--Terceiro dado da quinta linha-->
+        </tr>
+    </table>
+</body>
+</html>
