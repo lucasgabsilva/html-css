@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p><label for="iuser">Usuário</label>
+        <input type="text" name="user" id="iuser" required maxlength="15" minlength="4" placeholder="digite aqui" autocomplete="username">
+    </p>
+    <p>
+        <label for="ipass">Senha</label>
+        <input type="password" name="pass" id="ipass" required minlength="8" placeholder="digite aqui" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
