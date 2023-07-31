@@ -15,13 +15,12 @@ html {
     height: 100vh;
 }
 
-@media screen and (max-width: 600px) { 
+
 body {
     background: black url(../imagens/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     }
-}
 
 main {
     background-color: rgba(255, 255, 255, 0.589);
